@@ -10,3 +10,4 @@ After cloning or downloading the folder, open the terminal, navigate to the fold
   npm install
   npm start
 ```
+The browser should open by itself with the project after start, but if it doesn't, you can access it using this address in your browser: http://localhost:3000/
