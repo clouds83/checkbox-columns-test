@@ -1,0 +1,75 @@
+:root {
+  --subtle-gray-50: #edf2f7;
+  --subtle-gray-100: #e2e8f0;
+  --subtle-gray-200: #cbd5e0;
+  --subtle-gray-300: #bfcfe0;
+  --dark-gray: #2d3748;
+  --primary-400: #2357b1;
+
+  --bg-color: var(--subtle-gray-50);
+  --title: var(--dark-gray);
+  --text: var(--dark-gray);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root,
+body,
+html {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 100%;
+}
+
+body {
+  background-color: var(--bg-color);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0 0.75rem 0.75rem;
+}
+
+body,
+button,
+button,
+input,
+select,
+textarea,
+optgroup,
+option,
+fieldset,
+legend,
+progress,
+meter {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.container {
+  display: flex;
+  max-width: 1400px;
+  padding: 0 2rem;
+}
+
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}

@@ -1,0 +1,28 @@
+@import '../mixins.scss';
+
+.step {
+  display: grid;
+  gap: 0.365rem;
+
+  div {
+    @include flex-center;
+    width: 3rem;
+    aspect-ratio: 1;
+    justify-self: center;
+    border-radius: 1.125rem;
+    background-color: white;
+    border: 1px solid var(--subtle-gray-300);
+  }
+
+  h2 {
+    font-size: 0.625rem;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  .active {
+    background-color: var(--dark-gray);
+    border-color: var(--dark-gray);
+    color: white;
+  }
+}

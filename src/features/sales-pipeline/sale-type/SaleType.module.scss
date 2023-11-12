@@ -1,0 +1,107 @@
+.saleType {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 14rem;
+  border-radius: 1rem;
+  background-color: var(--subtle-gray-100);
+  padding: 0.875rem;
+
+  .infoBox {
+    z-index: 10;
+    height: 11rem;
+    border: 1px solid var(--subtle-gray-200);
+    border-radius: 0.75rem;
+    margin: 0.5rem -0.5rem 0;
+  }
+
+  .title {
+    z-index: 10;
+    text-transform: uppercase;
+    color: var(--title);
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    background: transparent;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 0) 100%);
+    height: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+
+  &.violet {
+    background-color: #f7f1ff;
+
+    .title {
+      color: #46426d;
+    }
+
+    .infoBox {
+      border-color: #e9d9ff;
+    }
+  }
+
+  &.orange {
+    background-color: #fef6ef;
+
+    .title {
+      color: #66421f;
+    }
+
+    .infoBox {
+      border-color: #ffe4cc;
+    }
+  }
+
+  &.blue {
+    background-color: #e6f4ff;
+
+    .title {
+      color: #003a66;
+    }
+
+    .infoBox {
+      border-color: #bfe3ff;
+    }
+  }
+
+  &.teal {
+    background-color: #def5f7;
+
+    .title {
+      color: #2a5154;
+    }
+
+    .infoBox {
+      border-color: #aaecf2;
+    }
+  }
+
+  &.pink {
+    background-color: #fff2f6;
+
+    .title {
+      color: #773a47;
+    }
+
+    .infoBox {
+      border-color: #ffd9e4;
+    }
+  }
+
+  &.gray {
+    background-color: #f2f7fa;
+
+    .title {
+      color: #4a5568;
+    }
+
+    .infoBox {
+      border-color: #e2e8f0;
+    }
+  }
+}

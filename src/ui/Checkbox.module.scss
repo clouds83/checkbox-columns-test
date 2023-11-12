@@ -1,0 +1,72 @@
+@import '../mixins.scss';
+
+.hiddenCheckbox {
+  display: none;
+}
+
+.checkboxLabel {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.875rem;
+  border-radius: 0.625rem;
+  width: 13rem;
+  padding: 1rem;
+  border: 1px solid var(--subtle-gray-100);
+  transition: background linear 100ms;
+
+  &:hover:not(.activeLabel) {
+    background-color: var(--subtle-gray-50);
+  }
+}
+
+.activeLabel {
+  border: 2px solid var(--primary-400);
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    left: 50%;
+  }
+
+  &::before {
+    border-width: 0.5rem;
+    border-style: solid;
+    border-color: var(--primary-400) transparent transparent transparent;
+    margin-left: -0.5rem;
+    margin-bottom: -1.125rem;
+  }
+
+  &::after {
+    border-width: 0.4375rem;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    margin-left: -0.4375rem;
+    margin-bottom: -0.875rem;
+  }
+}
+
+.customCheckbox {
+  @include flex-center;
+  width: 1rem;
+  height: 1rem;
+  background: white;
+  border: 2px solid var(--subtle-gray-300);
+  border-radius: 0.25rem;
+  position: relative;
+  display: inline-block;
+  margin-top: 1px;
+}
+
+.activeCheckbox {
+  background: var(--primary-400)
+    url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 1.27776C10 1.46053 9.93025 1.64339 9.79074 1.78267L4.07645 7.49696C3.9375 7.63714 3.75446 7.70633 3.57143 7.70633C3.38839 7.70633 3.2058 7.63658 3.06652 7.49707L0.209375 4.63993C0.0698661 4.50098 0 4.31794 0 4.13491C0 3.72687 0.333705 3.42062 0.714286 3.42062C0.897054 3.42062 1.07991 3.49037 1.2192 3.62988L3.57143 5.98312L8.78125 0.773298C8.91964 0.633343 9.10268 0.563477 9.28571 0.563477C9.66741 0.563477 10 0.86928 10 1.27776Z' fill='white'/%3E%3C/svg%3E%0A")
+    no-repeat center;
+  border-color: var(--primary-400);
+}
