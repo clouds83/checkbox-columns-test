@@ -11,3 +11,7 @@ After cloning or downloading the folder, open the terminal, navigate to the fold
   npm start
 ```
 The browser should open by itself with the project after start, but if it doesn't, you can access it using this address in your browser: http://localhost:3000/
+
+## Screenshot
+
+![image](https://github.com/clouds83/checkbox-columns-test/assets/1158183/20e46e8d-9acd-40bd-bd91-264a87981152)
